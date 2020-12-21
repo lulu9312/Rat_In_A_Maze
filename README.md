@@ -1,2 +1,2 @@
 # Rat_In_A_Maze
-A simple algorithm to solve maze using backtracking
+A simple algorithm to solve maze using backtracking. Backtracking is finding the solution of a problem whereby the solution depends on the previous steps taken.A maze is a 2D matrix in which some cells are blocked. One of the cells is the source cell, from where we have to start. And another one of them is the destination, where we have to reach. We have to find a path from the source to the destination without moving into any of the blocked cells.
