@@ -1,0 +1,12 @@
+Firstly, we will make a matrix to represent the maze, and the elements of the matrix will be either 0 or 1. 1 will represent the blocked cell and 0 will represent the cells in which we can move.
+Now, we will make one more matrix of the same dimension to store the solution. Its elements will also be either 0 or 1. 1 will represent the cells in our path and rest of the cells will be 0. 
+Thus, we now have our matrices. 
+Next, we will find a path from the source cell to the destination cell and the steps we will take are:
+1.Check for the current cell, if it is the destination cell, then the puzzle is solved.
+2.If not, then we will try to move downward and see if we can move in the downward cell or not (to move in a cell it must be vacant and not already present in the path).
+3.If we can move there, then we will continue with the path taken to the next downward cell.
+4.If not, we will try to move to the rightward cell. And if it is blocked or taken, we will move upward.
+5.Similarly, if we can't move up as well, we will simply move to the left cell.
+6.If none of the four moves (down, right, up, or left) are possible, we will simply move back and change our current path (backtracking).
+Thus, we try to move to the other cell (down, right, up, and left) from the current cell and if no movement is possible, then just come back and change the direction of the path to another cell.
+
